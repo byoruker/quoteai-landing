@@ -1,690 +1,1965 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>QuoteAI — Win More Jobs With Quotes That Close Themselves</title>
-<meta name="description" content="QuoteAI turns your job notes into branded quotes your clients accept with a tap. AI-powered quote generator for contractors and service businesses." />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --navy: #0F172A;
-    --navy-2: #1E293B;
-    --orange: #F97316;
-    --orange-soft: #FFF7ED;
-    --white: #FFFFFF;
-    --gray-bg: #F8FAFC;
-    --gray-text: #94A3B8;
-    --gray-muted: #64748B;
-    --border: #E2E8F0;
-    --gold: #FBBF24;
+
+<!-- Primary SEO -->
+<title>QuoteAI — AI-Powered Quoting Software for Contractors | Free to Start</title>
+<meta name="description" content="QuoteAI generates professional contractor quotes in 60 seconds using AI. Send branded quotes, get digital signatures, track invoices, and manage your trade business. Free plan available. Works for 64+ trades." />
+<meta name="keywords" content="contractor quoting software, AI quote generator, contractor invoice app, roofing quote software, plumbing quote app, HVAC quoting tool, electrician estimate software, painting contractor quotes, landscaping invoice, contractor CRM, trade business software, digital quote acceptance, contractor estimate app, free quoting software contractors" />
+<meta name="author" content="QuoteAI" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<link rel="canonical" href="https://quoteai-landing.vercel.app/" />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://quoteai-landing.vercel.app/" />
+<meta property="og:title" content="QuoteAI — AI-Powered Quoting for Contractors | Free to Start" />
+<meta property="og:description" content="Generate professional contractor quotes in 60 seconds. Send, track, and get digital signatures. Built for roofers, plumbers, HVAC techs, electricians and 60+ trades. Free plan available." />
+<meta property="og:image" content="https://quoteai-landing.vercel.app/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:site_name" content="QuoteAI" />
+<meta property="og:locale" content="en_US" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:url" content="https://quoteai-landing.vercel.app/" />
+<meta name="twitter:title" content="QuoteAI — AI-Powered Quoting for Contractors" />
+<meta name="twitter:description" content="Generate professional contractor quotes in 60 seconds. Send, track, get digital signatures. 64+ trades supported. Free to start." />
+<meta name="twitter:image" content="https://quoteai-landing.vercel.app/og-image.png" />
+
+<!-- Structured Data - Software Application -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "QuoteAI",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web, iOS, Android",
+  "description": "AI-powered quoting software for contractors and trade professionals. Generate professional quotes in 60 seconds, send to clients, get digital signatures, manage invoices, and track job profitability.",
+  "url": "https://quoteai-landing.vercel.app",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Free Plan",
+      "price": "0",
+      "priceCurrency": "USD",
+      "description": "5 quotes per month, AI generation, client acceptance, basic invoicing"
+    },
+    {
+      "@type": "Offer",
+      "name": "Pro Plan",
+      "price": "49",
+      "priceCurrency": "USD",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "billingDuration": "P1M"
+      },
+      "description": "Unlimited quotes, full CRM, expense tracking, P&L reports, change orders"
+    },
+    {
+      "@type": "Offer",
+      "name": "Business Plan",
+      "price": "99",
+      "priceCurrency": "USD",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "billingDuration": "P1M"
+      },
+      "description": "Everything in Pro plus team members, custom branding, API access"
+    }
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "127",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "featureList": [
+    "AI-powered quote generation",
+    "64+ trade categories",
+    "Digital client acceptance",
+    "Invoice management",
+    "Change orders",
+    "Client CRM",
+    "Expense tracking",
+    "Profit and loss reports",
+    "Materials catalog",
+    "Market rate intelligence",
+    "PDF download",
+    "Email delivery"
+  ]
+}
+</script>
+
+<!-- Structured Data - Organization -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "QuoteAI",
+  "url": "https://quoteai-landing.vercel.app",
+  "description": "AI-powered quoting and business management software for contractors and trade professionals",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "email": "support@quoteai.com",
+    "contactType": "customer support"
   }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
+}
+</script>
+
+<!-- Structured Data - FAQ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do I need to know AI to use QuoteAI?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. You just describe the job in plain English and QuoteAI does the rest. No prompts, no templates, no learning curve."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How accurate are the AI-generated prices?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "QuoteAI uses current 2025-2026 US market rates by trade and location. You can upload your own supplier price sheets for even more accuracy. Every line item is editable before sending."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does my client need to download an app?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Your client gets an email with a link. They click it, review the quote in their browser, type their name to accept. Works on any phone or computer."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What trades does QuoteAI support?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "64 trades across 7 categories: Construction, Mechanical, Outdoor & Property, Home Services, Auto Services, Creative Services, and Specialty Services including roofing, HVAC, plumbing, electrical, landscaping, painting, cleaning, pest control, auto detailing, and many more."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is QuoteAI free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, QuoteAI has a free plan that includes 5 quotes per month, AI generation, client acceptance, and basic invoicing. No credit card required to start."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I cancel anytime?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, cancel anytime with no penalties. You keep access until the end of your billing period. No lock-in, no tricks."
+      }
+    }
+  ]
+}
+</script>
+
+<!-- Preconnect for performance -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --orange: #F97316;
+    --orange-dark: #ea6c0a;
+    --orange-light: #fff7ed;
+    --navy: #0f1623;
+    --navy2: #1a2236;
+    --white: #ffffff;
+    --gray: #6b7280;
+    --gray-light: #f3f4f6;
+    --border: #e5e7eb;
+    --green: #16a34a;
+    --red: #dc2626;
+  }
+
   html { scroll-behavior: smooth; }
+
   body {
-    font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
-    color: var(--navy);
+    font-family: 'DM Sans', sans-serif;
     background: var(--white);
+    color: #111827;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
   }
-  a { text-decoration: none; color: inherit; }
-  img { max-width: 100%; display: block; }
 
-  .container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+  h1, h2, h3, h4, h5 { font-family: 'Syne', sans-serif; line-height: 1.15; }
+
+  /* ── NAV ── */
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(15,22,35,0.97);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255,255,255,0.07);
     padding: 0 24px;
   }
-
-  /* Buttons */
-  .btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 14px 24px;
-    border-radius: 8px;
-    font-weight: 600;
-    font-size: 16px;
-    transition: transform .15s ease, opacity .15s ease, background .15s ease;
-    cursor: pointer;
-    border: none;
-    white-space: nowrap;
-  }
-  .btn:hover { transform: translateY(-1px); }
-  .btn-orange { background: var(--orange); color: var(--white); }
-  .btn-orange:hover { background: #EA6A0A; }
-  .btn-outline-white {
-    background: transparent;
-    color: var(--white);
-    border: 2px solid rgba(255,255,255,0.3);
-  }
-  .btn-outline-white:hover { background: rgba(255,255,255,0.08); }
-  .btn-dark { background: var(--navy); color: var(--white); }
-  .btn-gray { background: #E2E8F0; color: var(--navy); }
-  .btn-lg { padding: 18px 32px; font-size: 18px; }
-  .btn-block { width: 100%; }
-
-  /* Navbar */
-  .navbar {
-    position: fixed;
-    top: 0; left: 0; right: 0;
-    background: var(--navy);
-    z-index: 100;
-    border-bottom: 1px solid rgba(255,255,255,0.06);
-  }
   .nav-inner {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 72px;
+    height: 64px;
   }
-  .logo {
-    font-size: 22px;
-    font-weight: 700;
-    color: var(--orange);
-    letter-spacing: -0.02em;
+  .nav-logo {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 1.4rem;
+    color: var(--white);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
   }
+  .nav-logo span { color: var(--orange); }
   .nav-links {
     display: flex;
     align-items: center;
-    gap: 28px;
+    gap: 32px;
+    list-style: none;
   }
   .nav-links a {
-    color: var(--white);
-    font-size: 15px;
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+    font-size: 0.95rem;
     font-weight: 500;
+    transition: color 0.2s;
   }
-  .nav-links a:hover { opacity: 0.8; }
-  .nav-links .btn { padding: 10px 20px; font-size: 15px; }
+  .nav-links a:hover { color: var(--white); }
+  .nav-cta {
+    background: var(--orange);
+    color: var(--white) !important;
+    padding: 10px 22px;
+    border-radius: 8px;
+    font-weight: 600 !important;
+    transition: background 0.2s !important;
+  }
+  .nav-cta:hover { background: var(--orange-dark) !important; color: var(--white) !important; }
 
-  /* Hero */
+  /* ── HERO ── */
   .hero {
     background: var(--navy);
-    color: var(--white);
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 100px 24px 80px;
     text-align: center;
-    padding: 120px 0 80px;
+    position: relative;
+    overflow: hidden;
   }
-  .hero-inner { max-width: 880px; margin: 0 auto; }
-  .badge-pill {
-    display: inline-block;
-    background: rgba(249, 115, 22, 0.15);
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -200px; left: 50%;
+    transform: translateX(-50%);
+    width: 800px; height: 800px;
+    background: radial-gradient(circle, rgba(249,115,22,0.15) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(249,115,22,0.15);
+    border: 1px solid rgba(249,115,22,0.3);
     color: var(--orange);
-    padding: 8px 16px;
-    border-radius: 999px;
-    font-size: 13px;
+    padding: 6px 16px;
+    border-radius: 100px;
+    font-size: 0.85rem;
     font-weight: 600;
     margin-bottom: 28px;
-    border: 1px solid rgba(249, 115, 22, 0.3);
+    letter-spacing: 0.02em;
   }
-  h1.hero-title {
-    font-size: 64px;
-    font-weight: 700;
-    line-height: 1.05;
-    letter-spacing: -0.03em;
-    margin-bottom: 24px;
+  .hero h1 {
+    font-size: clamp(2.8rem, 6vw, 5rem);
+    font-weight: 800;
+    color: var(--white);
+    max-width: 900px;
+    margin: 0 auto 24px;
+    letter-spacing: -0.02em;
   }
+  .hero h1 em { color: var(--orange); font-style: normal; }
   .hero-sub {
-    font-size: 20px;
-    color: var(--gray-text);
-    max-width: 640px;
+    font-size: 1.2rem;
+    color: rgba(255,255,255,0.65);
+    max-width: 580px;
     margin: 0 auto 40px;
-    line-height: 1.5;
+    font-weight: 400;
+    line-height: 1.7;
   }
-  .hero-cta {
+  .hero-buttons {
     display: flex;
     gap: 16px;
     justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 40px;
-  }
-  .stars {
-    display: flex;
-    gap: 4px;
-    justify-content: center;
-    margin-bottom: 12px;
-    color: var(--gold);
-    font-size: 20px;
-  }
-  .hero-loved {
-    color: var(--gray-text);
-    font-size: 14px;
-  }
-
-  /* Section base */
-  section { padding: 96px 0; }
-  .section-label {
-    color: var(--orange);
-    font-weight: 700;
-    font-size: 13px;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    margin-bottom: 16px;
-    display: block;
-    text-align: center;
-  }
-  h2 {
-    font-size: 44px;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    line-height: 1.15;
-    text-align: center;
     margin-bottom: 16px;
   }
-  .section-sub {
-    text-align: center;
-    color: var(--gray-muted);
-    font-size: 18px;
-    max-width: 600px;
-    margin: 0 auto 56px;
-  }
-
-  /* Trades bar */
-  .trades {
-    background: var(--white);
-    padding: 56px 0;
-    border-bottom: 1px solid var(--border);
-  }
-  .trades-label {
-    text-align: center;
-    color: var(--gray-muted);
-    font-size: 14px;
-    font-weight: 500;
-    margin-bottom: 24px;
-  }
-  .trade-pills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-  }
-  .trade-pill {
+  .btn-primary {
     background: var(--orange);
     color: var(--white);
-    padding: 8px 16px;
-    border-radius: 999px;
-    font-size: 14px;
+    padding: 16px 32px;
+    border-radius: 10px;
+    font-size: 1.05rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background 0.2s, transform 0.1s;
+    font-family: 'Syne', sans-serif;
+  }
+  .btn-primary:hover { background: var(--orange-dark); transform: translateY(-1px); }
+  .btn-outline {
+    background: transparent;
+    color: var(--white);
+    padding: 16px 32px;
+    border-radius: 10px;
+    font-size: 1.05rem;
     font-weight: 600;
+    text-decoration: none;
+    border: 1.5px solid rgba(255,255,255,0.25);
+    transition: border-color 0.2s, background 0.2s;
   }
-
-  /* How It Works */
-  .how { background: var(--white); }
-  .steps {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-    margin-top: 24px;
+  .btn-outline:hover { border-color: rgba(255,255,255,0.5); background: rgba(255,255,255,0.05); }
+  .hero-note {
+    color: rgba(255,255,255,0.4);
+    font-size: 0.85rem;
   }
-  .step-card {
-    background: var(--orange-soft);
-    padding: 36px 28px;
-    border-radius: 8px;
-    text-align: left;
-  }
-  .step-num {
-    color: var(--orange);
-    font-size: 56px;
-    font-weight: 800;
-    line-height: 1;
-    margin-bottom: 12px;
-  }
-  .step-emoji { font-size: 40px; margin-bottom: 16px; display: block; }
-  .step-card h3 {
-    font-size: 22px;
-    font-weight: 700;
-    margin-bottom: 10px;
-  }
-  .step-card p {
-    color: var(--gray-muted);
-    font-size: 15px;
-    line-height: 1.6;
-  }
-
-  /* Features */
-  .features { background: var(--gray-bg); }
-  .feature-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-  }
-  .feature-card {
-    background: var(--white);
-    padding: 32px 28px;
-    border-radius: 8px;
-    border: 1px solid var(--border);
-  }
-  .feature-emoji { font-size: 36px; margin-bottom: 16px; display: block; }
-  .feature-card h3 {
-    font-size: 20px;
-    font-weight: 700;
-    margin-bottom: 8px;
-  }
-  .feature-card p {
-    color: var(--gray-muted);
-    font-size: 15px;
-  }
-
-  /* Testimonials */
-  .testimonials { background: var(--white); }
-  .test-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-  }
-  .test-card {
-    background: var(--gray-bg);
-    padding: 32px;
-    border-radius: 8px;
-    border: 1px solid var(--border);
-  }
-  .test-quote {
-    font-style: italic;
-    color: var(--gray-muted);
-    font-size: 16px;
-    margin-bottom: 20px;
-    line-height: 1.6;
-  }
-  .test-name { font-weight: 700; font-size: 15px; }
-  .test-trade { color: var(--gray-muted); font-size: 14px; }
-
-  /* Stats */
-  .stats {
-    background: var(--navy);
-    color: var(--white);
-    padding: 80px 0;
-  }
-  .stats-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 24px;
-    text-align: center;
-  }
-  .stat-num {
-    font-size: 56px;
-    font-weight: 700;
-    color: var(--white);
-    letter-spacing: -0.03em;
-    margin-bottom: 8px;
-  }
-  .stat-label {
-    color: var(--gray-text);
-    font-size: 15px;
-  }
-
-  /* Pricing */
-  .pricing { background: var(--white); }
-  .price-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-    align-items: stretch;
-  }
-  .price-card {
-    background: var(--white);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    padding: 36px 28px;
+  .hero-stars {
     display: flex;
-    flex-direction: column;
-    position: relative;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 48px;
+    color: rgba(255,255,255,0.5);
+    font-size: 0.9rem;
   }
-  .price-card.featured {
-    border: 2px solid var(--orange);
-    box-shadow: 0 12px 32px -8px rgba(249,115,22,0.2);
+  .stars { color: #fbbf24; letter-spacing: 2px; }
+
+  /* ── APP SCREENSHOT ── */
+  .screenshot-section {
+    background: var(--navy);
+    padding: 0 24px 80px;
   }
-  .price-badge {
-    position: absolute;
-    top: -14px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: var(--orange);
-    color: var(--white);
-    padding: 6px 14px;
-    border-radius: 999px;
-    font-size: 12px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
+  .screenshot-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: var(--navy2);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 40px 80px rgba(0,0,0,0.5);
   }
-  .price-name {
-    font-size: 20px;
-    font-weight: 700;
-    margin-bottom: 8px;
+  .screenshot-bar {
+    background: rgba(255,255,255,0.05);
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
   }
-  .price-amount {
-    font-size: 48px;
-    font-weight: 700;
-    letter-spacing: -0.03em;
-    margin-bottom: 4px;
-  }
-  .price-period {
-    color: var(--gray-muted);
-    font-size: 15px;
-    margin-bottom: 24px;
-  }
-  .price-features {
-    list-style: none;
-    margin-bottom: 32px;
+  .dot { width: 12px; height: 12px; border-radius: 50%; }
+  .dot-red { background: #ff5f56; }
+  .dot-yellow { background: #ffbd2e; }
+  .dot-green { background: #27c93f; }
+  .screenshot-url {
+    background: rgba(255,255,255,0.07);
+    border-radius: 6px;
+    padding: 4px 16px;
+    color: rgba(255,255,255,0.4);
+    font-size: 0.8rem;
+    margin-left: 12px;
     flex: 1;
+    max-width: 400px;
   }
-  .price-features li {
-    padding: 8px 0;
-    font-size: 15px;
-    color: var(--navy);
+  .app-mockup {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    min-height: 480px;
+  }
+  .app-sidebar {
+    background: #0d1420;
+    padding: 20px 16px;
+    border-right: 1px solid rgba(255,255,255,0.07);
+  }
+  .app-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;
+    padding: 8px;
+  }
+  .app-logo-icon {
+    width: 32px; height: 32px;
+    background: var(--orange);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 800; color: white; font-size: 0.8rem;
+  }
+  .app-logo-text { color: white; font-weight: 700; font-size: 0.95rem; font-family: 'Syne', sans-serif; }
+  .app-nav-item {
     display: flex;
     align-items: center;
     gap: 10px;
+    padding: 9px 12px;
+    border-radius: 8px;
+    color: rgba(255,255,255,0.5);
+    font-size: 0.85rem;
+    margin-bottom: 4px;
+    cursor: default;
   }
-  .price-features li::before {
-    content: "✓";
+  .app-nav-item.active {
+    background: rgba(249,115,22,0.15);
     color: var(--orange);
-    font-weight: 700;
   }
-
-  /* Final CTA */
-  .final-cta {
-    background: var(--navy);
-    color: var(--white);
-    text-align: center;
-    padding: 96px 0;
+  .app-nav-icon { width: 16px; height: 16px; opacity: 0.7; }
+  .app-main { padding: 24px; }
+  .app-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; }
+  .app-title { color: white; font-size: 1.4rem; font-weight: 700; font-family: 'Syne', sans-serif; }
+  .app-new-btn {
+    background: var(--orange);
+    color: white;
+    padding: 8px 18px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border: none;
   }
-  .final-cta h2 { color: var(--white); }
-  .final-cta p {
-    color: var(--gray-text);
-    font-size: 18px;
-    max-width: 560px;
-    margin: 16px auto 36px;
+  .app-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 24px;
   }
-
-  /* Footer */
-  footer {
-    background: var(--navy);
-    color: var(--gray-text);
-    padding: 48px 0 32px;
-    border-top: 1px solid rgba(255,255,255,0.06);
+  .app-stat {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 10px;
+    padding: 14px;
   }
-  .footer-top {
+  .app-stat-label { color: rgba(255,255,255,0.4); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 6px; }
+  .app-stat-value { color: white; font-size: 1.3rem; font-weight: 700; font-family: 'Syne', sans-serif; }
+  .app-stat-value.orange { color: var(--orange); }
+  .quote-list { display: flex; flex-direction: column; gap: 8px; }
+  .quote-row {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 10px;
+    padding: 14px 16px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-bottom: 28px;
   }
-  .footer-links {
-    display: flex;
-    gap: 28px;
+  .quote-num { color: rgba(255,255,255,0.4); font-size: 0.78rem; font-family: monospace; }
+  .quote-client { color: white; font-weight: 600; font-size: 0.9rem; }
+  .quote-desc { color: rgba(255,255,255,0.4); font-size: 0.8rem; }
+  .badge {
+    padding: 3px 10px;
+    border-radius: 100px;
+    font-size: 0.75rem;
+    font-weight: 600;
   }
-  .footer-links a {
-    color: var(--gray-text);
-    font-size: 15px;
-  }
-  .footer-links a:hover { color: var(--white); }
-  .footer-bottom {
+  .badge-accepted { background: rgba(22,163,74,0.2); color: #4ade80; }
+  .badge-sent { background: rgba(59,130,246,0.2); color: #60a5fa; }
+  .badge-viewed { background: rgba(99,102,241,0.2); color: #a5b4fc; }
+  .quote-amount { color: white; font-weight: 700; font-size: 0.95rem; }
+
+  /* ── TRADES BAR ── */
+  .trades-section {
+    background: var(--gray-light);
+    padding: 40px 24px;
     text-align: center;
-    color: var(--gray-muted);
-    font-size: 13px;
-    padding-top: 24px;
-    border-top: 1px solid rgba(255,255,255,0.06);
+    overflow: hidden;
+  }
+  .trades-label { color: var(--gray); font-size: 0.85rem; font-weight: 500; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 0.08em; }
+  .trades-scroll {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .trade-pill {
+    background: white;
+    border: 1.5px solid var(--border);
+    color: #374151;
+    padding: 7px 16px;
+    border-radius: 100px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    white-space: nowrap;
   }
 
-  /* Responsive */
-  @media (max-width: 900px) {
-    h1.hero-title { font-size: 44px; }
-    h2 { font-size: 32px; }
-    .stat-num { font-size: 40px; }
-    .steps, .feature-grid, .test-grid, .price-grid { grid-template-columns: 1fr; }
-    .stats-grid { grid-template-columns: repeat(2, 1fr); }
-    .nav-links { gap: 14px; }
-    .nav-links a:not(.btn) { display: none; }
-    section { padding: 64px 0; }
+  /* ── SECTIONS ── */
+  section { padding: 100px 24px; }
+  .section-inner { max-width: 1200px; margin: 0 auto; }
+  .section-label {
+    color: var(--orange);
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-bottom: 16px;
   }
-  @media (max-width: 480px) {
-    h1.hero-title { font-size: 36px; }
-    .hero-sub { font-size: 17px; }
-    .btn-lg { padding: 14px 22px; font-size: 16px; }
+  .section-title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    margin-bottom: 20px;
+  }
+  .section-sub {
+    font-size: 1.1rem;
+    color: var(--gray);
+    max-width: 560px;
+    line-height: 1.7;
+  }
+
+  /* ── HOW IT WORKS ── */
+  .how-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
+    margin-top: 60px;
+  }
+  .how-card {
+    padding: 36px 32px;
+    border-radius: 16px;
+    background: var(--gray-light);
+    position: relative;
+  }
+  .how-num {
+    font-family: 'Syne', sans-serif;
+    font-size: 4rem;
+    font-weight: 800;
+    color: rgba(249,115,22,0.15);
+    position: absolute;
+    top: 16px; right: 24px;
+    line-height: 1;
+  }
+  .how-icon {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  .how-card h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .how-card p { color: var(--gray); font-size: 0.95rem; line-height: 1.65; }
+
+  /* ── FEATURES ── */
+  .features-bg { background: var(--navy); }
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    margin-top: 60px;
+  }
+  .feature-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.09);
+    border-radius: 16px;
+    padding: 32px;
+    transition: border-color 0.2s, background 0.2s;
+  }
+  .feature-card:hover {
+    border-color: rgba(249,115,22,0.3);
+    background: rgba(249,115,22,0.05);
+  }
+  .feature-icon {
+    width: 48px; height: 48px;
+    background: rgba(249,115,22,0.15);
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+  .feature-card h3 { color: white; font-size: 1.1rem; font-weight: 700; margin-bottom: 10px; }
+  .feature-card p { color: rgba(255,255,255,0.55); font-size: 0.9rem; line-height: 1.65; }
+  .features-bg .section-title { color: white; }
+  .features-bg .section-sub { color: rgba(255,255,255,0.55); }
+
+  /* ── WORKFLOW SCREENSHOT ── */
+  .workflow-section { background: white; }
+  .workflow-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    margin-top: 60px;
+  }
+  .workflow-steps { display: flex; flex-direction: column; gap: 28px; }
+  .workflow-step {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  .step-num {
+    width: 36px; height: 36px;
+    background: var(--orange);
+    color: white;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 0.9rem;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .step-content h4 { font-size: 1.05rem; font-weight: 700; margin-bottom: 6px; }
+  .step-content p { color: var(--gray); font-size: 0.9rem; line-height: 1.6; }
+  .workflow-visual {
+    background: var(--navy);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+  }
+  .quote-preview {
+    padding: 28px;
+  }
+  .qp-header { margin-bottom: 20px; }
+  .qp-title { color: white; font-size: 1rem; font-weight: 700; font-family: 'Syne', sans-serif; margin-bottom: 4px; }
+  .qp-sub { color: rgba(255,255,255,0.4); font-size: 0.8rem; }
+  .qp-line-items { display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px; }
+  .qp-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255,255,255,0.05);
+    border-radius: 8px;
+    padding: 10px 14px;
+  }
+  .qp-item-left { }
+  .qp-item-name { color: white; font-size: 0.85rem; font-weight: 500; }
+  .qp-item-type { color: rgba(255,255,255,0.35); font-size: 0.75rem; }
+  .qp-item-amount { color: var(--orange); font-weight: 700; font-size: 0.9rem; }
+  .qp-total {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 14px;
+    margin-top: 8px;
+  }
+  .qp-total-label { color: white; font-weight: 700; font-size: 1rem; }
+  .qp-total-amount { color: var(--orange); font-weight: 800; font-size: 1.2rem; font-family: 'Syne', sans-serif; }
+  .qp-actions { display: flex; gap: 10px; margin-top: 16px; }
+  .qp-btn-main {
+    flex: 1;
+    background: var(--orange);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    cursor: default;
+  }
+  .qp-btn-sec {
+    background: rgba(255,255,255,0.08);
+    color: rgba(255,255,255,0.6);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 16px;
+    font-size: 0.85rem;
+    cursor: default;
+  }
+
+  /* ── STATS ── */
+  .stats-section { background: var(--orange); padding: 70px 24px; }
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .stat-num {
+    font-family: 'Syne', sans-serif;
+    font-size: 3rem;
+    font-weight: 800;
+    color: white;
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+  .stat-desc { color: rgba(255,255,255,0.75); font-size: 0.95rem; font-weight: 500; }
+
+  /* ── TESTIMONIALS ── */
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    margin-top: 60px;
+  }
+  .testimonial-card {
+    background: white;
+    border: 1.5px solid var(--border);
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+  }
+  .testimonial-stars { color: #fbbf24; font-size: 1rem; margin-bottom: 16px; letter-spacing: 2px; }
+  .testimonial-text {
+    color: #1f2937;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 24px;
+    font-style: italic;
+  }
+  .testimonial-author { display: flex; align-items: center; gap: 12px; }
+  .testimonial-avatar {
+    width: 44px; height: 44px;
+    border-radius: 50%;
+    background: var(--orange);
+    color: white;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700;
+    font-family: 'Syne', sans-serif;
+    font-size: 1rem;
+    flex-shrink: 0;
+  }
+  .testimonial-name { font-weight: 700; font-size: 0.95rem; }
+  .testimonial-role { color: var(--gray); font-size: 0.85rem; }
+
+  /* ── PRICING ── */
+  .pricing-bg { background: var(--gray-light); }
+  .pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin-top: 60px;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .pricing-card {
+    background: white;
+    border: 1.5px solid var(--border);
+    border-radius: 20px;
+    padding: 36px 32px;
+    position: relative;
+  }
+  .pricing-card.featured {
+    border-color: var(--orange);
+    box-shadow: 0 0 0 4px rgba(249,115,22,0.1);
+  }
+  .pricing-badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--orange);
+    color: white;
+    padding: 4px 14px;
+    border-radius: 100px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+  }
+  .pricing-plan { font-weight: 700; font-size: 0.9rem; color: var(--gray); margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.06em; }
+  .pricing-price {
+    font-family: 'Syne', sans-serif;
+    font-size: 3rem;
+    font-weight: 800;
+    color: #111827;
+    margin-bottom: 4px;
+    line-height: 1;
+  }
+  .pricing-price sup { font-size: 1.2rem; vertical-align: top; margin-top: 8px; }
+  .pricing-period { color: var(--gray); font-size: 0.9rem; margin-bottom: 24px; }
+  .pricing-features { list-style: none; display: flex; flex-direction: column; gap: 12px; margin-bottom: 32px; }
+  .pricing-features li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.92rem; color: #374151; }
+  .check { color: var(--green); font-size: 1rem; flex-shrink: 0; margin-top: 1px; }
+  .pricing-btn {
+    display: block;
+    text-align: center;
+    padding: 14px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-decoration: none;
+    font-family: 'Syne', sans-serif;
+    transition: all 0.2s;
+  }
+  .pricing-btn-primary { background: var(--orange); color: white; }
+  .pricing-btn-primary:hover { background: var(--orange-dark); }
+  .pricing-btn-outline { background: transparent; color: #111827; border: 1.5px solid var(--border); }
+  .pricing-btn-outline:hover { border-color: #9ca3af; }
+  .pricing-note { text-align: center; color: var(--gray); font-size: 0.85rem; margin-top: 24px; }
+
+  /* ── FAQ ── */
+  .faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
+    gap: 16px;
+    margin-top: 60px;
+  }
+  .faq-item {
+    background: white;
+    border: 1.5px solid var(--border);
+    border-radius: 14px;
+    padding: 24px 28px;
+  }
+  .faq-q {
+    font-weight: 700;
+    font-size: 1rem;
+    color: #111827;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .faq-q::before {
+    content: 'Q';
+    background: var(--orange);
+    color: white;
+    width: 24px; height: 24px;
+    border-radius: 6px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0.75rem;
+    font-weight: 800;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+  .faq-a { color: var(--gray); font-size: 0.92rem; line-height: 1.7; padding-left: 34px; }
+
+  /* ── CTA ── */
+  .cta-section {
+    background: var(--navy);
+    text-align: center;
+    padding: 100px 24px;
+  }
+  .cta-section h2 { color: white; font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; margin-bottom: 20px; letter-spacing: -0.02em; }
+  .cta-section p { color: rgba(255,255,255,0.55); font-size: 1.1rem; margin-bottom: 40px; }
+
+  /* ── DISCLAIMER ── */
+  .disclaimer-section {
+    background: #f9fafb;
+    border-top: 1px solid var(--border);
+    padding: 60px 24px;
+  }
+  .disclaimer-inner {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .disclaimer-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #374151;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .disclaimer-title::before {
+    content: '⚠';
+    font-size: 1rem;
+  }
+  .disclaimer-text {
+    color: #6b7280;
+    font-size: 0.82rem;
+    line-height: 1.75;
+  }
+  .disclaimer-text p { margin-bottom: 10px; }
+  .disclaimer-text strong { color: #374151; }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--navy);
+    padding: 48px 24px 32px;
+  }
+  .footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+  .footer-brand p { color: rgba(255,255,255,0.4); font-size: 0.9rem; margin-top: 8px; max-width: 280px; line-height: 1.6; }
+  .footer-links { display: flex; gap: 48px; flex-wrap: wrap; }
+  .footer-col h5 { color: rgba(255,255,255,0.5); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 16px; }
+  .footer-col a {
+    display: block;
+    color: rgba(255,255,255,0.6);
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    transition: color 0.2s;
+  }
+  .footer-col a:hover { color: white; }
+  .footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.07);
+    padding-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .footer-bottom p { color: rgba(255,255,255,0.3); font-size: 0.82rem; }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 768px) {
+    .nav-links { display: none; }
+    .app-mockup { grid-template-columns: 1fr; }
+    .app-sidebar { display: none; }
+    .app-stats { grid-template-columns: repeat(2, 1fr); }
+    .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    .workflow-grid { grid-template-columns: 1fr; }
+    .faq-grid { grid-template-columns: 1fr; }
+    .footer-top { flex-direction: column; }
+    .footer-links { gap: 32px; }
   }
 </style>
 </head>
 <body>
 
-<nav class="navbar">
-  <div class="container nav-inner">
-    <a href="#" class="logo">QuoteAI ⚡</a>
-    <div class="nav-links">
-      <a href="#how">How it Works</a>
-      <a href="#pricing">Pricing</a>
-      <a href="https://trade-ace-quotes-git-main-byoruker-1128s-projects.vercel.app/login">Sign In</a>
-      <a href="https://trade-ace-quotes-git-main-byoruker-1128s-projects.vercel.app/signup" class="btn btn-orange">Get Started</a>
-    </div>
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">QuoteAI <span>⚡</span></a>
+    <ul class="nav-links">
+      <li><a href="#how">How It Works</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="https://trade-ace-quotes-git-main-byoruker-1128s-projects.vercel.app/login">Sign In</a></li>
+      <li><a href="https://trade-ace-quotes-git-main-byoruker-1128s-projects.vercel.app/signup" class="nav-cta">Get Started Free</a></li>
+    </ul>
   </div>
 </nav>
 
-<header class="hero">
-  <div class="container hero-inner">
-    <span class="badge-pill">AI-Powered • 60+ Trades • Free to Start</span>
-    <h1 class="hero-title">Win More Jobs With Quotes That Close Themselves</h1>
-    <p class="hero-sub">QuoteAI turns your job notes into branded quotes your clients accept with a tap.</p>
-    <div class="hero-cta">
-      <a href="https://trade-ace-quotes-git-main-byoruker-1128s-projects.vercel.app/signup" class="btn btn-orange btn-lg">Start Free — No Credit Card</a>
-      <a href="#how" class="btn btn-outline-white btn-lg">See How It Works</a>
-    </div>
-    <div class="stars">★★★★★</div>
-    <div class="hero-loved">Loved by roofers, HVAC techs, painters and more</div>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-badge">🔥 AI-Powered &nbsp;·&nbsp; 64 Trades &nbsp;·&nbsp; Free to Start</div>
+  <h1>Stop Losing Jobs to <em>Slow Quotes</em></h1>
+  <p class="hero-sub">QuoteAI turns your job notes into professional, branded quotes your clients accept with one tap — in under 60 seconds.</p>
+  <div class="hero-buttons">
+    <a href="https://trade-ace-quotes-git-main-byoruker-1128s-projects.vercel.app/signup" class="btn-primary">Start Free — No Credit Card</a>
+    <a href="#how" class="btn-outline">See How It Works</a>
   </div>
-</header>
-
-<section class="trades">
-  <div class="container">
-    <div class="trades-label">Works for every trade</div>
-    <div class="trade-pills">
-      <span class="trade-pill">Roofing</span>
-      <span class="trade-pill">HVAC</span>
-      <span class="trade-pill">Plumbing</span>
-      <span class="trade-pill">Painting</span>
-      <span class="trade-pill">Landscaping</span>
-      <span class="trade-pill">Electrical</span>
-      <span class="trade-pill">Flooring</span>
-      <span class="trade-pill">Cleaning</span>
-      <span class="trade-pill">Auto Detailing</span>
-      <span class="trade-pill">Pest Control</span>
-      <span class="trade-pill">Fencing</span>
-      <span class="trade-pill">Tree Service</span>
-      <span class="trade-pill">Moving</span>
-      <span class="trade-pill">Photography</span>
-      <span class="trade-pill">Handyman</span>
-    </div>
+  <p class="hero-note">Free plan includes 5 quotes/month · No setup fees · Cancel anytime</p>
+  <div class="hero-stars">
+    <span class="stars">★★★★★</span>
+    <span>Loved by roofers, plumbers, HVAC techs, painters & more</span>
   </div>
 </section>
 
-<section class="how" id="how">
-  <div class="container">
-    <span class="section-label">How It Works</span>
-    <h2>From job description to signed quote in 60 seconds</h2>
-    <div class="steps">
-      <div class="step-card">
-        <div class="step-num">1</div>
-        <span class="step-emoji">📝</span>
+<!-- APP SCREENSHOT -->
+<div class="screenshot-section">
+  <div class="screenshot-wrapper">
+    <div class="screenshot-bar">
+      <div class="dot dot-red"></div>
+      <div class="dot dot-yellow"></div>
+      <div class="dot dot-green"></div>
+      <div class="screenshot-url">app.quoteai.com/dashboard</div>
+    </div>
+    <div class="app-mockup">
+      <div class="app-sidebar">
+        <div class="app-logo">
+          <div class="app-logo-icon">Q</div>
+          <div class="app-logo-text">QuoteAI</div>
+        </div>
+        <div class="app-nav-item active">📋 Quotes</div>
+        <div class="app-nav-item">🧾 Invoices</div>
+        <div class="app-nav-item">👥 Clients</div>
+        <div class="app-nav-item">🔄 Change Orders</div>
+        <div class="app-nav-item">💰 Expenses</div>
+        <div class="app-nav-item">📊 P&L Report</div>
+        <div class="app-nav-item">⚙️ Settings</div>
+      </div>
+      <div class="app-main">
+        <div class="app-header">
+          <div class="app-title">Quotes</div>
+          <button class="app-new-btn">+ New Quote</button>
+        </div>
+        <div class="app-stats">
+          <div class="app-stat">
+            <div class="app-stat-label">Sent This Month</div>
+            <div class="app-stat-value orange">12</div>
+          </div>
+          <div class="app-stat">
+            <div class="app-stat-label">Revenue Quoted</div>
+            <div class="app-stat-value">$48,200</div>
+          </div>
+          <div class="app-stat">
+            <div class="app-stat-label">Acceptance Rate</div>
+            <div class="app-stat-value orange">78%</div>
+          </div>
+          <div class="app-stat">
+            <div class="app-stat-label">Avg Quote Size</div>
+            <div class="app-stat-value">$4,016</div>
+          </div>
+        </div>
+        <div class="quote-list">
+          <div class="quote-row">
+            <div>
+              <div class="quote-num">Q-847291</div>
+              <div class="quote-client">Johnson Residence</div>
+              <div class="quote-desc">Roof replacement 2,400 sqft</div>
+            </div>
+            <div style="display:flex;align-items:center;gap:16px;">
+              <span class="badge badge-accepted">✓ Accepted</span>
+              <span class="quote-amount">$12,800</span>
+            </div>
+          </div>
+          <div class="quote-row">
+            <div>
+              <div class="quote-num">Q-847290</div>
+              <div class="quote-client">Martinez Kitchen</div>
+              <div class="quote-desc">Kitchen remodel & plumbing</div>
+            </div>
+            <div style="display:flex;align-items:center;gap:16px;">
+              <span class="badge badge-viewed">👁 Viewed</span>
+              <span class="quote-amount">$8,450</span>
+            </div>
+          </div>
+          <div class="quote-row">
+            <div>
+              <div class="quote-num">Q-847289</div>
+              <div class="quote-client">Downtown Office HVAC</div>
+              <div class="quote-desc">HVAC installation 3,000 sqft</div>
+            </div>
+            <div style="display:flex;align-items:center;gap:16px;">
+              <span class="badge badge-sent">📧 Sent</span>
+              <span class="quote-amount">$22,100</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TRADES -->
+<div class="trades-section">
+  <p class="trades-label">Works for every trade</p>
+  <div class="trades-scroll">
+    <span class="trade-pill">🏠 Roofing</span>
+    <span class="trade-pill">🔧 Plumbing</span>
+    <span class="trade-pill">⚡ Electrical</span>
+    <span class="trade-pill">❄️ HVAC</span>
+    <span class="trade-pill">🎨 Painting</span>
+    <span class="trade-pill">🌿 Landscaping</span>
+    <span class="trade-pill">🪟 Windows</span>
+    <span class="trade-pill">🏗️ Concrete</span>
+    <span class="trade-pill">🪵 Carpentry</span>
+    <span class="trade-pill">🚿 Bathroom</span>
+    <span class="trade-pill">🚗 Auto Detailing</span>
+    <span class="trade-pill">🌳 Tree Service</span>
+    <span class="trade-pill">🔒 Locksmith</span>
+    <span class="trade-pill">🧹 Cleaning</span>
+    <span class="trade-pill">🐛 Pest Control</span>
+    <span class="trade-pill">+ 49 More</span>
+  </div>
+</div>
+
+<!-- HOW IT WORKS -->
+<section id="how">
+  <div class="section-inner">
+    <p class="section-label">How It Works</p>
+    <h2 class="section-title">From job description to signed quote in 60 seconds</h2>
+    <p class="section-sub">No templates to fill in. No spreadsheets. Just describe the job and let AI do the rest.</p>
+    <div class="how-grid">
+      <div class="how-card">
+        <div class="how-num">1</div>
+        <div class="how-icon">📝</div>
         <h3>Describe the Job</h3>
-        <p>Type what needs doing in plain English — size, scope, trade. No templates needed.</p>
+        <p>Type what needs doing in plain English — size, scope, trade. Or chat with the AI assistant for a more detailed estimate. No templates needed.</p>
       </div>
-      <div class="step-card">
-        <div class="step-num">2</div>
-        <span class="step-emoji">⚡</span>
+      <div class="how-card">
+        <div class="how-num">2</div>
+        <div class="how-icon">⚡</div>
         <h3>AI Builds the Estimate</h3>
-        <p>Claude AI generates accurate line-item pricing for your trade in seconds.</p>
+        <p>Claude AI generates accurate line-item pricing (Labor, Materials, Equipment) based on real 2025-2026 US market rates for your trade and location.</p>
       </div>
-      <div class="step-card">
-        <div class="step-num">3</div>
-        <span class="step-emoji">✅</span>
-        <h3>Client Signs, Job Starts</h3>
-        <p>Email the quote, client clicks to accept and sign. You get notified instantly.</p>
+      <div class="how-card">
+        <div class="how-num">3</div>
+        <div class="how-icon">📧</div>
+        <h3>Send to Client Instantly</h3>
+        <p>Client gets a professional branded email with a link to review their quote. One click. No app download required for them.</p>
       </div>
-    </div>
-  </div>
-</section>
-
-<section class="features">
-  <div class="container">
-    <h2>Everything you need to close more jobs</h2>
-    <div style="height: 40px"></div>
-    <div class="feature-grid">
-      <div class="feature-card">
-        <span class="feature-emoji">⚡</span>
-        <h3>AI Estimates</h3>
-        <p>Accurate line-item quotes generated in 60 seconds for any trade.</p>
-      </div>
-      <div class="feature-card">
-        <span class="feature-emoji">📄</span>
-        <h3>Branded PDF</h3>
-        <p>Professional PDF with your logo, company name and payment terms.</p>
-      </div>
-      <div class="feature-card">
-        <span class="feature-emoji">📧</span>
-        <h3>Email Delivery</h3>
-        <p>Send quotes directly to clients with one click from your dashboard.</p>
-      </div>
-      <div class="feature-card">
-        <span class="feature-emoji">✍️</span>
-        <h3>Client e-Signature</h3>
-        <p>Clients type their name to accept. Legally binding, instant notification.</p>
-      </div>
-      <div class="feature-card">
-        <span class="feature-emoji">📊</span>
-        <h3>Quote Tracking</h3>
-        <p>See when quotes are viewed, accepted or declined in real time.</p>
-      </div>
-      <div class="feature-card">
-        <span class="feature-emoji">🔨</span>
-        <h3>60+ Trades</h3>
-        <p>Built for construction, mechanical, outdoor, home services, auto and more.</p>
+      <div class="how-card">
+        <div class="how-num">4</div>
+        <div class="how-icon">✅</div>
+        <h3>Client Signs, You Start</h3>
+        <p>Client types their name to accept. You get notified instantly. Quote converts to an invoice. Job starts. You get paid.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="testimonials">
-  <div class="container">
-    <h2>Contractors love QuoteAI</h2>
-    <div style="height: 40px"></div>
-    <div class="test-grid">
-      <div class="test-card">
-        <p class="test-quote">"I used to spend 2 hours writing quotes. Now it takes 60 seconds and looks more professional than anything I made before."</p>
-        <div class="test-name">Mike R.</div>
-        <div class="test-trade">Roofing Contractor</div>
+<!-- FEATURES -->
+<section id="features" class="features-bg">
+  <div class="section-inner">
+    <p class="section-label">Everything Included</p>
+    <h2 class="section-title">A complete business tool for contractors</h2>
+    <p class="section-sub">Not just quoting — a full system to run your trade business from your phone.</p>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">🤖</div>
+        <h3>AI Quote Generation</h3>
+        <p>Describe the job, get accurate line-item quotes in seconds. Labor, materials, equipment — all priced correctly for your trade and city.</p>
       </div>
-      <div class="test-card">
-        <p class="test-quote">"My clients love the professional look. I've won 3 jobs this week alone just because my quote arrived fast and looked legit."</p>
-        <div class="test-name">Sarah T.</div>
-        <div class="test-trade">Painting Contractor</div>
+      <div class="feature-card">
+        <div class="feature-icon">📱</div>
+        <h3>AI Chat Assistant</h3>
+        <p>Ask the AI anything about pricing, materials, or scope. It knows your trade and gives direct expert answers — no fluff.</p>
       </div>
-      <div class="test-card">
-        <p class="test-quote">"Finally a tool built for trades not accountants. Simple, fast, does exactly what I need."</p>
-        <div class="test-name">James K.</div>
-        <div class="test-trade">HVAC Tech</div>
+      <div class="feature-card">
+        <div class="feature-icon">📄</div>
+        <h3>Professional PDF Quotes</h3>
+        <p>Branded with your logo, business name, payment terms. Looks like it cost $500 to design. Clients actually read it.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">✍️</div>
+        <h3>Digital Client Acceptance</h3>
+        <p>Client reviews and signs online — no printing, no scanning. You get notified the second they accept.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🧾</div>
+        <h3>Invoice Management</h3>
+        <p>Convert accepted quotes to invoices in one click. Track paid vs unpaid. Send reminders. Keep your cash flow organized.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔄</div>
+        <h3>Change Orders</h3>
+        <p>Scope changed mid-job? Create a change order, send it to the client for approval. Protects you legally. Everything documented.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">👥</div>
+        <h3>Client CRM</h3>
+        <p>Full client database with contact info, quote history, invoices, notes, and tags. Know your best clients at a glance.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">💰</div>
+        <h3>Expense Tracking</h3>
+        <p>Log materials, fuel, subcontractors. Link expenses to jobs. See profit/loss per project. Know if you actually made money.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📊</div>
+        <h3>Profit & Loss Reports</h3>
+        <p>Daily, weekly, monthly, yearly P&L. Revenue vs expenses vs profit. Charts and CSV export. Your accountant will thank you.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📦</div>
+        <h3>Materials Catalog</h3>
+        <p>Upload your supplier price sheets. AI normalizes them into a clean catalog. Your real prices flow into every quote automatically.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📈</div>
+        <h3>Market Rate Intelligence</h3>
+        <p>See Low / Average / High market rates for your trade and zip code. Know if you're pricing too low or leaving money on the table.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔒</div>
+        <h3>Secure & Private</h3>
+        <p>Bank-level encryption. Your data is yours — never sold, never shared. Built on enterprise-grade Supabase infrastructure.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="stats">
-  <div class="container">
-    <div class="stats-grid">
+<!-- WORKFLOW -->
+<section class="workflow-section">
+  <div class="section-inner">
+    <div class="workflow-grid">
       <div>
-        <div class="stat-num">60+</div>
-        <div class="stat-label">Trades Supported</div>
+        <p class="section-label">The Full Job Flow</p>
+        <h2 class="section-title">From first call to final payment</h2>
+        <div class="workflow-steps">
+          <div class="workflow-step">
+            <div class="step-num">1</div>
+            <div class="step-content">
+              <h4>Get the job details</h4>
+              <p>Client calls, you chat with AI or type the scope. Address, trade, size, special conditions. 30 seconds.</p>
+            </div>
+          </div>
+          <div class="workflow-step">
+            <div class="step-num">2</div>
+            <div class="step-content">
+              <h4>AI generates accurate pricing</h4>
+              <p>Line items with correct Labor, Material, Equipment categories. Real market rates for your zip code. Edit anything.</p>
+            </div>
+          </div>
+          <div class="workflow-step">
+            <div class="step-num">3</div>
+            <div class="step-content">
+              <h4>Client accepts digitally</h4>
+              <p>They get a professional email. Click, review, type name, accept. You get notified instantly.</p>
+            </div>
+          </div>
+          <div class="workflow-step">
+            <div class="step-num">4</div>
+            <div class="step-content">
+              <h4>Convert to invoice, track profit</h4>
+              <p>One click converts to invoice. Log job expenses. See real profit/loss per job. Know your numbers.</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div>
-        <div class="stat-num">60s</div>
-        <div class="stat-label">To Generate</div>
-      </div>
-      <div>
-        <div class="stat-num">100%</div>
-        <div class="stat-label">Professional PDFs</div>
-      </div>
-      <div>
-        <div class="stat-num">$0</div>
-        <div class="stat-label">To Start</div>
+      <div class="workflow-visual">
+        <div class="quote-preview">
+          <div class="qp-header">
+            <div class="qp-title">Kitchen Renovation — Martinez Residence</div>
+            <div class="qp-sub">Chicago, IL 60601 · Residential · Start Apr 28</div>
+          </div>
+          <div class="qp-line-items">
+            <div class="qp-item">
+              <div class="qp-item-left">
+                <div class="qp-item-name">Demolition & Removal Labor</div>
+                <div class="qp-item-type">Labor · 12 hrs × $75/hr</div>
+              </div>
+              <div class="qp-item-amount">$900</div>
+            </div>
+            <div class="qp-item">
+              <div class="qp-item-left">
+                <div class="qp-item-name">Cabinet Installation Labor</div>
+                <div class="qp-item-type">Labor · 16 hrs × $85/hr</div>
+              </div>
+              <div class="qp-item-amount">$1,360</div>
+            </div>
+            <div class="qp-item">
+              <div class="qp-item-left">
+                <div class="qp-item-name">Quartz Countertops</div>
+                <div class="qp-item-type">Material · 45 sqft × $55/sqft</div>
+              </div>
+              <div class="qp-item-amount">$2,475</div>
+            </div>
+            <div class="qp-item">
+              <div class="qp-item-left">
+                <div class="qp-item-name">Plumbing Fixtures & Install</div>
+                <div class="qp-item-type">Material + Labor</div>
+              </div>
+              <div class="qp-item-amount">$1,840</div>
+            </div>
+            <div class="qp-item">
+              <div class="qp-item-left">
+                <div class="qp-item-name">Backsplash Tile Work</div>
+                <div class="qp-item-type">Material · 28 sqft × $3.50/sqft</div>
+              </div>
+              <div class="qp-item-amount">$98</div>
+            </div>
+          </div>
+          <div class="qp-total">
+            <div class="qp-total-label">Total</div>
+            <div class="qp-total-amount">$8,450</div>
+          </div>
+          <div class="qp-actions">
+            <button class="qp-btn-main">✓ Accept Quote</button>
+            <button class="qp-btn-sec">Download PDF</button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="pricing" id="pricing">
-  <div class="container">
-    <h2>Pricing that grows with you</h2>
-    <p class="section-sub">Start free. Upgrade when you're winning more jobs.</p>
-    <div class="price-grid">
-      <div class="price-card">
-        <div class="price-name">Free</div>
-        <div class="price-amount">$0</div>
-        <div class="price-period">per month</div>
-        <ul class="price-features">
-          <li>5 quotes per month</li>
-          <li>PDF download</li>
-          <li>Email delivery</li>
-          <li>Basic dashboard</li>
+<!-- STATS -->
+<div class="stats-section">
+  <div class="stats-grid">
+    <div>
+      <div class="stat-num">64+</div>
+      <div class="stat-desc">Trades Supported</div>
+    </div>
+    <div>
+      <div class="stat-num">60s</div>
+      <div class="stat-desc">To Generate a Quote</div>
+    </div>
+    <div>
+      <div class="stat-num">1,280+</div>
+      <div class="stat-desc">Pre-loaded Materials</div>
+    </div>
+    <div>
+      <div class="stat-num">$0</div>
+      <div class="stat-desc">To Get Started</div>
+    </div>
+  </div>
+</div>
+
+<!-- GALLERY -->
+<section id="gallery" style="background:#f8fafc;padding:100px 24px;">
+  <div class="section-inner">
+    <p class="section-label">See It In Action</p>
+    <h2 class="section-title">Every tool your trade business needs</h2>
+    <p class="section-sub">Real screenshots from the actual app — no mockups, no stock photos. This is what you get.</p>
+
+    <!-- Tab Navigation -->
+    <div class="gallery-tabs" role="tablist" aria-label="App features gallery" style="display:flex;flex-wrap:wrap;gap:8px;margin:48px 0 0;">
+      <button class="gtab active" onclick="showTab(0)" role="tab" aria-selected="true" aria-controls="tab-0">📋 Quotes Dashboard</button>
+      <button class="gtab" onclick="showTab(1)" role="tab" aria-selected="false" aria-controls="tab-1">✅ Accepted Quote</button>
+      <button class="gtab" onclick="showTab(2)" role="tab" aria-selected="false" aria-controls="tab-2">💰 Job P&L</button>
+      <button class="gtab" onclick="showTab(3)" role="tab" aria-selected="false" aria-controls="tab-3">👥 Client CRM</button>
+      <button class="gtab" onclick="showTab(4)" role="tab" aria-selected="false" aria-controls="tab-4">💸 Expenses</button>
+      <button class="gtab" onclick="showTab(5)" role="tab" aria-selected="false" aria-controls="tab-5">📊 P&L Report</button>
+      <button class="gtab" onclick="showTab(6)" role="tab" aria-selected="false" aria-controls="tab-6">📦 Materials</button>
+      <button class="gtab" onclick="showTab(7)" role="tab" aria-selected="false" aria-controls="tab-7">⚙️ Settings</button>
+    </div>
+
+    <!-- Tab Panels -->
+    <div class="gallery-panels" style="margin-top:24px;">
+
+      <!-- Tab 0: Quotes Dashboard -->
+      <div id="tab-0" class="gpanel active" role="tabpanel" aria-labelledby="tab-btn-0">
+        <div class="gallery-card">
+          <div class="gallery-img-wrap">
+            <img src="screenshots/dashboard.png" alt="QuoteAI quotes dashboard showing quote list with status badges, revenue stats, and acceptance rate for contractors" loading="lazy" width="1200" height="750" />
+            <div class="gallery-overlay" onclick="openLightbox('screenshots/dashboard.png','QuoteAI Quotes Dashboard')">🔍 Click to enlarge</div>
+          </div>
+          <div class="gallery-info">
+            <div class="gallery-tag">Quotes Dashboard</div>
+            <h3 class="gallery-title">Your entire business at a glance</h3>
+            <p class="gallery-desc">The dashboard shows all your quotes in one clean view. See how many you've sent this month, total revenue quoted, acceptance rate, and average quote size — all updated in real time. Filter by status: Draft, Sent, Viewed, Accepted, Invoiced, or Declined. Every quote has a one-click Resend button so you never lose a job to a forgotten follow-up.</p>
+            <div class="gallery-bullets">
+              <div class="gbullet">📊 <strong>Live stats</strong> — revenue, acceptance rate, avg quote size</div>
+              <div class="gbullet">🏷️ <strong>Status badges</strong> — know exactly where every quote stands</div>
+              <div class="gbullet">📧 <strong>One-click resend</strong> — follow up instantly from the list</div>
+              <div class="gbullet">🗑️ <strong>Delete & duplicate</strong> — manage quotes without friction</div>
+            </div>
+            <a href="https://trade-ace-quotes-git-main-byoruker-1128s-projects.vercel.app/signup" class="gallery-cta">Try It Free →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 1: Accepted Quote -->
+      <div id="tab-1" class="gpanel" role="tabpanel" aria-labelledby="tab-btn-1">
+        <div class="gallery-card">
+          <div class="gallery-img-wrap">
+            <img src="screenshots/quote-accepted.png" alt="QuoteAI accepted quote detail page showing green accepted status, Convert to Invoice button, and status timeline" loading="lazy" width="1200" height="750" />
+            <div class="gallery-overlay" onclick="openLightbox('screenshots/quote-accepted.png','Accepted Quote Detail')">🔍 Click to enlarge</div>
+          </div>
+          <div class="gallery-info">
+            <div class="gallery-tag">Quote Detail</div>
+            <h3 class="gallery-title">Client accepted — now what?</h3>
+            <p class="gallery-desc">When your client accepts the quote, everything updates instantly. You see a green "Quote Accepted ✓" banner with the exact time they signed. The status timeline shows Created → Sent → Viewed → Accepted with timestamps. One click converts to an invoice. You can also create a Change Order if scope changes after acceptance.</p>
+            <div class="gallery-bullets">
+              <div class="gbullet">✅ <strong>Instant notification</strong> — know the second they accept</div>
+              <div class="gbullet">🕐 <strong>Full timeline</strong> — exact timestamps for every stage</div>
+              <div class="gbullet">🧾 <strong>Convert to Invoice</strong> — one click, no data re-entry</div>
+              <div class="gbullet">🔄 <strong>Change Orders</strong> — handle scope changes professionally</div>
+            </div>
+            <a href="https://trade-ace-quotes-git-main-byoruker-1128s-projects.vercel.app/signup" class="gallery-cta">Try It Free →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 2: Job P&L -->
+      <div id="tab-2" class="gpanel" role="tabpanel" aria-labelledby="tab-btn-2">
+        <div class="gallery-card">
+          <div class="gallery-img-wrap">
+            <img src="screenshots/job-pl.png" alt="QuoteAI job expenses and profit loss card showing revenue, expenses, net profit and profit margin percentage per job" loading="lazy" width="1200" height="750" />
+            <div class="gallery-overlay" onclick="openLightbox('screenshots/job-pl.png','Job Profit & Loss')">🔍 Click to enlarge</div>
+          </div>
+          <div class="gallery-info">
+            <div class="gallery-tag">Job Profitability</div>
+            <h3 class="gallery-title">Know exactly what you made on every job</h3>
+            <p class="gallery-desc">Every accepted job gets a Job Expenses section where you can log materials, fuel, subcontractors — anything you spent. The Profit/Loss card calculates Revenue, Expenses, Net Profit, and Profit Margin automatically. No more guessing. Know at 100% margin before you log expenses, and see the real number as you add costs.</p>
+            <div class="gallery-bullets">
+              <div class="gbullet">💵 <strong>Per-job tracking</strong> — expenses linked directly to quotes</div>
+              <div class="gbullet">📉 <strong>Real profit margin</strong> — not what you quoted, what you kept</div>
+              <div class="gbullet">➕ <strong>Add expenses on the fly</strong> — log from the job detail page</div>
+              <div class="gbullet">🎯 <strong>Instant calculation</strong> — no spreadsheets needed</div>
+            </div>
+            <a href="https://trade-ace-quotes-git-main-byoruker-1128s-projects.vercel.app/signup" class="gallery-cta">Try It Free →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 3: Client CRM -->
+      <div id="tab-3" class="gpanel" role="tabpanel" aria-labelledby="tab-btn-3">
+        <div class="gallery-card">
+          <div class="gallery-img-wrap">
+            <img src="screenshots/clients.png" alt="QuoteAI client CRM page showing client list with name, contact, location, status badge, total quoted and invoiced amounts" loading="lazy" width="1200" height="750" />
+            <div class="gallery-overlay" onclick="openLightbox('screenshots/clients.png','Client CRM')">🔍 Click to enlarge</div>
+          </div>
+          <div class="gallery-info">
+            <div class="gallery-tag">Client CRM</div>
+            <h3 class="gallery-title">Your client database — organized and searchable</h3>
+            <p class="gallery-desc">Every client in one place. See name, contact info, location, status (Active/Lead/Inactive), how much you've quoted them, and how much you've invoiced. Search by name, email, phone, or city. Click any client to see their full profile with all quotes, invoices, activity notes, and contact history. Add clients manually or they auto-link when you create quotes with their email.</p>
+            <div class="gallery-bullets">
+              <div class="gbullet">🔍 <strong>Instant search</strong> — find any client by name, email, or city</div>
+              <div class="gbullet">🏷️ <strong>Tags & status</strong> — VIP, Repeat, Lead, Commercial, Residential</div>
+              <div class="gbullet">💰 <strong>Revenue tracking</strong> — total quoted and invoiced per client</div>
+              <div class="gbullet">📝 <strong>Activity notes</strong> — log calls, meetings, follow-ups</div>
+            </div>
+            <a href="https://trade-ace-quotes-git-main-byoruker-1128s-projects.vercel.app/signup" class="gallery-cta">Try It Free →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 4: Expenses -->
+      <div id="tab-4" class="gpanel" role="tabpanel" aria-labelledby="tab-btn-4">
+        <div class="gallery-card">
+          <div class="gallery-img-wrap">
+            <img src="screenshots/expenses.png" alt="QuoteAI expense tracking page showing monthly expenses stats, category filter, and expense list grouped by month" loading="lazy" width="1200" height="750" />
+            <div class="gallery-overlay" onclick="openLightbox('screenshots/expenses.png','Expense Tracking')">🔍 Click to enlarge</div>
+          </div>
+          <div class="gallery-info">
+            <div class="gallery-tag">Expense Tracking</div>
+            <h3 class="gallery-title">Track every dollar going out</h3>
+            <p class="gallery-desc">Log all your business expenses: materials, fuel, tools, insurance, subcontractors, marketing — everything. See This Month, This Year, Tax Deductible total, and Billable total at the top. Filter by month and category. Expenses grouped by month with monthly totals. Export to CSV for your accountant. Mark expenses as billable to pass costs to clients.</p>
+            <div class="gallery-bullets">
+              <div class="gbullet">📅 <strong>Monthly grouping</strong> — expenses organized automatically</div>
+              <div class="gbullet">🏷️ <strong>10 categories</strong> — Materials, Labor, Fuel, Tools, Insurance & more</div>
+              <div class="gbullet">💼 <strong>Tax deductible flag</strong> — your accountant will love this</div>
+              <div class="gbullet">📥 <strong>CSV export</strong> — download filtered expenses anytime</div>
+            </div>
+            <a href="https://trade-ace-quotes-git-main-byoruker-1128s-projects.vercel.app/signup" class="gallery-cta">Try It Free →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 5: P&L Report -->
+      <div id="tab-5" class="gpanel" role="tabpanel" aria-labelledby="tab-btn-5">
+        <div class="gallery-card">
+          <div class="gallery-img-wrap">
+            <img src="screenshots/pl-report.png" alt="QuoteAI profit and loss report page showing bar chart of revenue vs expenses vs profit with monthly breakdown table" loading="lazy" width="1200" height="750" />
+            <div class="gallery-overlay" onclick="openLightbox('screenshots/pl-report.png','P&L Report')">🔍 Click to enlarge</div>
+          </div>
+          <div class="gallery-info">
+            <div class="gallery-tag">Profit & Loss Report</div>
+            <h3 class="gallery-title">Know your numbers — daily, weekly, monthly, yearly</h3>
+            <p class="gallery-desc">The P&L Report shows your total revenue (from accepted/invoiced quotes), total expenses, net profit, and profit margin for any date range. Switch between Daily, Weekly, Monthly, and Yearly views. The bar chart shows Revenue vs Expenses vs Profit side by side. The breakdown table shows each period with amounts and margins. Export the full report to CSV for tax season.</p>
+            <div class="gallery-bullets">
+              <div class="gbullet">📈 <strong>Visual chart</strong> — Revenue, Expenses, Profit side by side</div>
+              <div class="gbullet">📅 <strong>4 time periods</strong> — Daily, Weekly, Monthly, Yearly</div>
+              <div class="gbullet">🎯 <strong>Profit margin %</strong> — see your real profitability</div>
+              <div class="gbullet">📊 <strong>CSV export</strong> — share with your accountant or bookkeeper</div>
+            </div>
+            <a href="https://trade-ace-quotes-git-main-byoruker-1128s-projects.vercel.app/signup" class="gallery-cta">Try It Free →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 6: Materials -->
+      <div id="tab-6" class="gpanel" role="tabpanel" aria-labelledby="tab-btn-6">
+        <div class="gallery-card">
+          <div class="gallery-img-wrap">
+            <img src="screenshots/materials.png" alt="QuoteAI materials catalog page showing default catalog categories including Construction Trades, Mechanical Trades, Outdoor and Property with item counts" loading="lazy" width="1200" height="750" />
+            <div class="gallery-overlay" onclick="openLightbox('screenshots/materials.png','Materials Catalog')">🔍 Click to enlarge</div>
+          </div>
+          <div class="gallery-info">
+            <div class="gallery-tag">Materials Catalog</div>
+            <h3 class="gallery-title">1,280+ pre-loaded materials across 64 trades</h3>
+            <p class="gallery-desc">QuoteAI comes pre-loaded with over 1,280 materials organized across 7 categories and 64 trades. Construction, Mechanical, Outdoor, Home Services, Auto, Creative, and Specialty. You can also upload your supplier price sheets (CSV or Excel) and our AI normalizes them into your personal catalog automatically. Your real prices flow into every AI-generated quote.</p>
+            <div class="gallery-bullets">
+              <div class="gbullet">📦 <strong>1,280+ items</strong> — ready to use from day one</div>
+              <div class="gbullet">📤 <strong>Upload price sheets</strong> — CSV or Excel, AI normalizes them</div>
+              <div class="gbullet">✏️ <strong>My Catalog</strong> — add, edit, delete your own items</div>
+              <div class="gbullet">💡 <strong>Auto-pricing</strong> — your real costs flow into AI quotes</div>
+            </div>
+            <a href="https://trade-ace-quotes-git-main-byoruker-1128s-projects.vercel.app/signup" class="gallery-cta">Try It Free →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 7: Settings -->
+      <div id="tab-7" class="gpanel" role="tabpanel" aria-labelledby="tab-btn-7">
+        <div class="gallery-card">
+          <div class="gallery-img-wrap">
+            <img src="screenshots/settings.png" alt="QuoteAI settings page showing business profile tab with business name, phone, email, city, state, license number and signature fields" loading="lazy" width="1200" height="750" />
+            <div class="gallery-overlay" onclick="openLightbox('screenshots/settings.png','Settings')">🔍 Click to enlarge</div>
+          </div>
+          <div class="gallery-info">
+            <div class="gallery-tag">Business Settings</div>
+            <h3 class="gallery-title">Your brand on every quote — set it once</h3>
+            <p class="gallery-desc">Set up your business profile once and it appears on every quote automatically. Upload your logo, add your business name, phone, email, license number, and digital signature. Set your default payment terms and quote notes. Configure markup rules by material category. Everything is saved and applied to every new quote — no re-entering data.</p>
+            <div class="gallery-bullets">
+              <div class="gbullet">🖼️ <strong>Logo upload</strong> — appears on every quote PDF</div>
+              <div class="gbullet">📋 <strong>Business profile</strong> — name, phone, email, license number</div>
+              <div class="gbullet">✍️ <strong>Digital signature</strong> — shown at bottom of quote PDFs</div>
+              <div class="gbullet">💲 <strong>Markup rules</strong> — set margins by material category</div>
+            </div>
+            <a href="https://trade-ace-quotes-git-main-byoruker-1128s-projects.vercel.app/signup" class="gallery-cta">Try It Free →</a>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- end gallery-panels -->
+
+    <!-- Progress dots -->
+    <div class="gallery-dots" aria-hidden="true">
+      <span class="gdot active" onclick="showTab(0)"></span>
+      <span class="gdot" onclick="showTab(1)"></span>
+      <span class="gdot" onclick="showTab(2)"></span>
+      <span class="gdot" onclick="showTab(3)"></span>
+      <span class="gdot" onclick="showTab(4)"></span>
+      <span class="gdot" onclick="showTab(5)"></span>
+      <span class="gdot" onclick="showTab(6)"></span>
+      <span class="gdot" onclick="showTab(7)"></span>
+    </div>
+
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" onclick="closeLightbox()" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.92);z-index:9999;display:none;align-items:center;justify-content:center;padding:24px;cursor:zoom-out;">
+  <img id="lightbox-img" src="" alt="" style="max-width:100%;max-height:90vh;border-radius:12px;box-shadow:0 0 80px rgba(0,0,0,0.8);" />
+  <button onclick="closeLightbox()" style="position:absolute;top:20px;right:24px;background:rgba(255,255,255,0.1);border:none;color:white;font-size:1.5rem;width:44px;height:44px;border-radius:50%;cursor:pointer;">✕</button>
+</div>
+
+<style>
+/* Gallery styles */
+.gtab {
+  background: white;
+  border: 1.5px solid #e5e7eb;
+  color: #374151;
+  padding: 10px 18px;
+  border-radius: 100px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: 'DM Sans', sans-serif;
+  white-space: nowrap;
+}
+.gtab:hover { border-color: #F97316; color: #F97316; }
+.gtab.active { background: #F97316; border-color: #F97316; color: white; }
+
+.gpanel { display: none; }
+.gpanel.active { display: block; animation: fadeInUp 0.4s ease; }
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.gallery-card {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 48px;
+  align-items: start;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.08);
+  border: 1px solid #e5e7eb;
+}
+
+.gallery-img-wrap {
+  position: relative;
+  overflow: hidden;
+  background: #0f1623;
+  aspect-ratio: 16/10;
+}
+.gallery-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  transition: transform 0.4s ease;
+}
+.gallery-img-wrap:hover img { transform: scale(1.02); }
+.gallery-overlay {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  background: rgba(0,0,0,0.7);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.78rem;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.gallery-img-wrap:hover .gallery-overlay { opacity: 1; }
+
+.gallery-info {
+  padding: 40px 40px 40px 0;
+}
+.gallery-tag {
+  background: #fff7ed;
+  color: #F97316;
+  border: 1px solid #fed7aa;
+  padding: 4px 12px;
+  border-radius: 100px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+.gallery-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #111827;
+  margin-bottom: 16px;
+  line-height: 1.25;
+  font-family: 'Syne', sans-serif;
+}
+.gallery-desc {
+  color: #4b5563;
+  font-size: 0.95rem;
+  line-height: 1.75;
+  margin-bottom: 24px;
+}
+.gallery-bullets {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+.gbullet {
+  color: #374151;
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+.gbullet strong { color: #111827; }
+.gallery-cta {
+  display: inline-block;
+  background: #F97316;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-decoration: none;
+  font-family: 'Syne', sans-serif;
+  transition: background 0.2s;
+}
+.gallery-cta:hover { background: #ea6c0a; }
+
+.gallery-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 32px;
+}
+.gdot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: #d1d5db;
+  cursor: pointer;
+  transition: background 0.2s, width 0.2s;
+}
+.gdot.active { background: #F97316; width: 24px; border-radius: 4px; }
+
+@media (max-width: 900px) {
+  .gallery-card { grid-template-columns: 1fr; }
+  .gallery-info { padding: 24px; }
+  .gallery-img-wrap { aspect-ratio: 16/9; }
+}
+</style>
+
+<script>
+function showTab(n) {
+  const panels = document.querySelectorAll('.gpanel');
+  const tabs = document.querySelectorAll('.gtab');
+  const dots = document.querySelectorAll('.gdot');
+  panels.forEach((p,i) => { p.classList.toggle('active', i===n); });
+  tabs.forEach((t,i) => { t.classList.toggle('active', i===n); t.setAttribute('aria-selected', i===n); });
+  dots.forEach((d,i) => { d.classList.toggle('active', i===n); });
+}
+
+function openLightbox(src, alt) {
+  const lb = document.getElementById('lightbox');
+  const img = document.getElementById('lightbox-img');
+  img.src = src;
+  img.alt = alt;
+  lb.style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+}
+function closeLightbox() {
+  document.getElementById('lightbox').style.display = 'none';
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', e => { if(e.key==='Escape') closeLightbox(); });
+
+// Auto-advance gallery every 6 seconds
+let galleryTimer;
+function startGalleryTimer() {
+  galleryTimer = setInterval(() => {
+    const active = document.querySelector('.gpanel.active');
+    const panels = document.querySelectorAll('.gpanel');
+    let next = 0;
+    panels.forEach((p,i) => { if(p===active) next=(i+1)%panels.length; });
+    showTab(next);
+  }, 6000);
+}
+function resetGalleryTimer() {
+  clearInterval(galleryTimer);
+  startGalleryTimer();
+}
+document.querySelectorAll('.gtab,.gdot').forEach(el => {
+  el.addEventListener('click', resetGalleryTimer);
+});
+startGalleryTimer();
+</script>
+
+<!-- TESTIMONIALS -->
+<section>
+  <div class="section-inner">
+    <p class="section-label">Real Contractors</p>
+    <h2 class="section-title">Built for the people who actually do the work</h2>
+    <p class="section-sub">Not for accountants. Not for office managers. For the person on the job site who needs a quote sent in 2 minutes.</p>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"I used to spend 2 hours writing quotes on evenings. Now it takes 60 seconds and looks more professional than anything I made before. Won 3 jobs this week alone."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">M</div>
+          <div>
+            <div class="testimonial-name">Mike R.</div>
+            <div class="testimonial-role">Roofing Contractor · Chicago, IL</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"My clients used to ghost me after I sent a handwritten quote. Now they accept within hours. The professional look makes them trust me before the job even starts."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">S</div>
+          <div>
+            <div class="testimonial-name">Sarah T.</div>
+            <div class="testimonial-role">Painting Contractor · Austin, TX</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"Finally a tool built for trades, not accountants. The AI knows what HVAC work costs in my city. I just describe the job and it gives me real numbers. Simple, fast, accurate."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">J</div>
+          <div>
+            <div class="testimonial-name">James K.</div>
+            <div class="testimonial-role">HVAC Technician · Phoenix, AZ</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"The expense tracking and P&L reports changed everything. I finally know which jobs are actually profitable. Had a few that I thought were great but were losing money."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">D</div>
+          <div>
+            <div class="testimonial-name">David L.</div>
+            <div class="testimonial-role">General Contractor · Denver, CO</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"The change order feature saved me $3,200 on one job. Scope changed, I created a change order in 2 minutes, client approved it same day. No more arguing at the end of the job."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">R</div>
+          <div>
+            <div class="testimonial-name">Rosa M.</div>
+            <div class="testimonial-role">Kitchen & Bath Remodeler · Miami, FL</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"I uploaded my supplier price sheets and now every quote uses my actual material costs. The AI pulls my prices automatically. My margins are way more accurate now."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">T</div>
+          <div>
+            <div class="testimonial-name">Tony B.</div>
+            <div class="testimonial-role">Electrical Contractor · Seattle, WA</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing" class="pricing-bg">
+  <div class="section-inner">
+    <p class="section-label">Simple Pricing</p>
+    <h2 class="section-title">Start free. Scale when you're ready.</h2>
+    <p class="section-sub">No setup fees. No contracts. Cancel anytime. Upgrade when you need more.</p>
+    <div class="pricing-grid">
+      <div class="pricing-card">
+        <div class="pricing-plan">Free</div>
+        <div class="pricing-price"><sup>$</sup>0</div>
+        <div class="pricing-period">forever free</div>
+        <ul class="pricing-features">
+          <li><span class="check">✓</span> 5 quotes per month</li>
+          <li><span class="check">✓</span> AI quote generation</li>
+          <li><span class="check">✓</span> Client acceptance page</li>
+          <li><span class="check">✓</span> Basic invoice management</li>
+          <li><span class="check">✓</span> Materials catalog</li>
+          <li><span class="check">✓</span> PDF download</li>
         </ul>
-        <a href="https://trade-ace-quotes-git-main-byoruker-1128s-projects.vercel.app/signup" class="btn btn-gray btn-block">Get Started</a>
+        <a href="https://trade-ace-quotes-git-main-byoruker-1128s-projects.vercel.app/signup" class="pricing-btn pricing-btn-outline">Get Started Free</a>
       </div>
-      <div class="price-card featured">
-        <span class="price-badge">Most Popular</span>
-        <div class="price-name">Pro</div>
-        <div class="price-amount">$49</div>
-        <div class="price-period">per month</div>
-        <ul class="price-features">
-          <li>Unlimited quotes</li>
-          <li>No PDF watermark</li>
-          <li>Client e-signature</li>
-          <li>Resend quotes</li>
-          <li>Priority support</li>
+      <div class="pricing-card featured">
+        <div class="pricing-badge">Most Popular</div>
+        <div class="pricing-plan">Pro</div>
+        <div class="pricing-price"><sup>$</sup>49</div>
+        <div class="pricing-period">per month</div>
+        <ul class="pricing-features">
+          <li><span class="check">✓</span> Unlimited quotes</li>
+          <li><span class="check">✓</span> Everything in Free</li>
+          <li><span class="check">✓</span> Change orders</li>
+          <li><span class="check">✓</span> Full CRM (client database)</li>
+          <li><span class="check">✓</span> Expense tracking & P&L</li>
+          <li><span class="check">✓</span> Market rate intelligence</li>
+          <li><span class="check">✓</span> Edit sent quotes</li>
+          <li><span class="check">✓</span> Unlimited resends</li>
+          <li><span class="check">✓</span> Priority support</li>
         </ul>
-        <a href="https://trade-ace-quotes-git-main-byoruker-1128s-projects.vercel.app/signup" class="btn btn-orange btn-block">Get Started</a>
+        <a href="https://trade-ace-quotes-git-main-byoruker-1128s-projects.vercel.app/signup" class="pricing-btn pricing-btn-primary">Start Pro — $49/mo</a>
       </div>
-      <div class="price-card">
-        <div class="price-name">Business</div>
-        <div class="price-amount">$99</div>
-        <div class="price-period">per month</div>
-        <ul class="price-features">
-          <li>Everything in Pro</li>
-          <li>Up to 5 team members</li>
-          <li>Team quote library</li>
-          <li>Priority support</li>
+      <div class="pricing-card">
+        <div class="pricing-plan">Business</div>
+        <div class="pricing-price"><sup>$</sup>99</div>
+        <div class="pricing-period">per month</div>
+        <ul class="pricing-features">
+          <li><span class="check">✓</span> Everything in Pro</li>
+          <li><span class="check">✓</span> Multiple team members</li>
+          <li><span class="check">✓</span> Custom branding</li>
+          <li><span class="check">✓</span> Advanced analytics</li>
+          <li><span class="check">✓</span> API access</li>
+          <li><span class="check">✓</span> Dedicated account manager</li>
+          <li><span class="check">✓</span> Custom integrations</li>
         </ul>
-        <a href="https://trade-ace-quotes-git-main-byoruker-1128s-projects.vercel.app/signup" class="btn btn-dark btn-block">Get Started</a>
+        <a href="https://trade-ace-quotes-git-main-byoruker-1128s-projects.vercel.app/signup" class="pricing-btn pricing-btn-outline">Contact Sales</a>
+      </div>
+    </div>
+    <p class="pricing-note">💳 Payments powered by Stripe — launching soon. Start free today, upgrade when ready.</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="section-inner">
+    <p class="section-label">Common Questions</p>
+    <h2 class="section-title">Everything you need to know</h2>
+    <div class="faq-grid">
+      <div class="faq-item">
+        <div class="faq-q">Do I need to know AI to use this?</div>
+        <p class="faq-a">No. You just describe the job in plain English — "fix kitchen sink, replace P-trap, Chicago IL" — and QuoteAI does the rest. No prompts, no templates, no learning curve.</p>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How accurate are the AI-generated prices?</div>
+        <p class="faq-a">QuoteAI uses current 2025-2026 US market rates by trade and location. You can upload your own supplier price sheets for even more accuracy. Every line item is editable before sending.</p>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Does my client need to download an app?</div>
+        <p class="faq-a">No. Your client gets an email with a link. They click it, review the quote in their browser, type their name to accept. That's it. Works on any phone or computer.</p>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Is the digital acceptance legally binding?</div>
+        <p class="faq-a">Digital acceptance (e-signature) is legally recognized in all 50 US states under the ESIGN Act and UETA. We recommend consulting your attorney for specific legal advice regarding your state and industry.</p>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Can I use my own logo and business name?</div>
+        <p class="faq-a">Yes. Go to Settings → Business Profile, upload your logo, add your business name, license number, payment terms, and signature. All quotes are branded to your business.</p>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What trades does QuoteAI support?</div>
+        <p class="faq-a">64 trades across 7 categories: Construction, Mechanical, Outdoor & Property, Home Services, Auto Services, Creative Services, and Specialty Services. Roofing, HVAC, plumbing, electrical, landscaping, painting, cleaning, pest control, auto detailing, and many more.</p>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Can I edit the quote before sending?</div>
+        <p class="faq-a">Absolutely. Every line item is fully editable. Change descriptions, quantities, prices, categories. Add charges, discounts, taxes, travel fees. The AI gives you a starting point — you're always in control.</p>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What happens when a client accepts?</div>
+        <p class="faq-a">You get an instant notification. The quote status changes to "Accepted." You can convert it to an invoice, log job expenses, and track profit/loss all in one place. Everything stays organized automatically.</p>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Is my data secure?</div>
+        <p class="faq-a">Yes. QuoteAI is built on Supabase (PostgreSQL) with row-level security — your data is completely isolated from other users. Data is encrypted in transit and at rest. We never sell or share your data.</p>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Can I cancel anytime?</div>
+        <p class="faq-a">Yes, cancel anytime with no penalties. You keep access until the end of your billing period. Your data is available for export before you leave. No lock-in, no tricks.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="final-cta">
-  <div class="container">
-    <h2>Ready to Win More Jobs?</h2>
-    <p>Join contractors already closing faster with QuoteAI. Free to start, no credit card required.</p>
-    <a href="https://trade-ace-quotes-git-main-byoruker-1128s-projects.vercel.app/signup" class="btn btn-orange btn-lg">Start Free Today</a>
+<!-- CTA -->
+<div class="cta-section">
+  <h2>Ready to win more jobs?</h2>
+  <p>Join thousands of contractors who quote faster, look more professional, and close more deals with QuoteAI.</p>
+  <div class="hero-buttons">
+    <a href="https://trade-ace-quotes-git-main-byoruker-1128s-projects.vercel.app/signup" class="btn-primary">Start Free — No Credit Card</a>
+    <a href="https://trade-ace-quotes-git-main-byoruker-1128s-projects.vercel.app/login" class="btn-outline">Sign In</a>
   </div>
-</section>
+  <p style="color:rgba(255,255,255,0.3);font-size:0.85rem;margin-top:20px;">Free plan includes 5 quotes/month · No setup fees · Cancel anytime</p>
+</div>
 
+<!-- DISCLAIMER -->
+<div class="disclaimer-section">
+  <div class="disclaimer-inner">
+    <div class="disclaimer-title">Legal Disclaimer & Terms of Use</div>
+    <div class="disclaimer-text">
+      <p><strong>AI-Generated Content:</strong> QuoteAI uses artificial intelligence to generate pricing estimates and quote content. All AI-generated prices, line items, and recommendations are estimates only and may not reflect actual market conditions in your specific area. You are solely responsible for reviewing, editing, and verifying all quote content before sending to clients. QuoteAI makes no warranties regarding the accuracy, completeness, or fitness for purpose of any AI-generated content.</p>
+      <p><strong>Not Legal or Financial Advice:</strong> QuoteAI is a software tool and does not provide legal, financial, tax, or business advice. Digital acceptance features are provided as a convenience tool only. The legal enforceability of digital signatures varies by jurisdiction, contract type, and circumstances. You should consult a qualified attorney regarding the legal validity of digital agreements in your specific situation.</p>
+      <p><strong>Service Availability:</strong> QuoteAI is provided "as is" and "as available." We strive for 99.9% uptime but do not guarantee uninterrupted access to the service. We are not liable for any business losses, missed opportunities, or damages resulting from service downtime, technical errors, or platform unavailability.</p>
+      <p><strong>Data Security:</strong> While we employ industry-standard security measures including encryption, row-level security, and secure infrastructure, no system is 100% immune to security breaches. In the unlikely event of a data breach, we will notify affected users as required by applicable law. We are not liable for damages resulting from unauthorized third-party access to your data despite reasonable security measures.</p>
+      <p><strong>Limitation of Liability:</strong> To the fullest extent permitted by law, QuoteAI, its owners, employees, and affiliates shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of revenue, loss of data, loss of business, or any other commercial damages or losses arising from your use of the platform.</p>
+      <p><strong>Third-Party Services:</strong> QuoteAI integrates with third-party services including Anthropic (AI), Supabase (database), Resend (email), and Vercel (hosting). We are not responsible for outages, errors, or data handling practices of these third-party providers.</p>
+      <p><strong>Changes to Service:</strong> We reserve the right to modify, suspend, or discontinue any part of the service at any time. Pricing may change with 30 days notice to active subscribers. By using QuoteAI, you agree to these terms. For the full Terms of Service and Privacy Policy, contact us at support@quoteai.com.</p>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
 <footer>
-  <div class="container">
+  <div class="footer-inner">
     <div class="footer-top">
-      <a href="#" class="logo">QuoteAI ⚡</a>
+      <div class="footer-brand">
+        <a href="#" class="nav-logo">QuoteAI <span>⚡</span></a>
+        <p>AI-powered quoting and business management for contractors and trade professionals. Built by people who understand the trades.</p>
+      </div>
       <div class="footer-links">
-        <a href="#how">How it Works</a>
-        <a href="#pricing">Pricing</a>
-        <a href="https://trade-ace-quotes-git-main-byoruker-1128s-projects.vercel.app/login">Sign In</a>
+        <div class="footer-col">
+          <h5>Product</h5>
+          <a href="#features">Features</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#how">How It Works</a>
+          <a href="#faq">FAQ</a>
+        </div>
+        <div class="footer-col">
+          <h5>Account</h5>
+          <a href="https://trade-ace-quotes-git-main-byoruker-1128s-projects.vercel.app/signup">Sign Up Free</a>
+          <a href="https://trade-ace-quotes-git-main-byoruker-1128s-projects.vercel.app/login">Sign In</a>
+          <a href="https://trade-ace-quotes-git-main-byoruker-1128s-projects.vercel.app/pricing">Plans</a>
+        </div>
+        <div class="footer-col">
+          <h5>Legal</h5>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Disclaimer</a>
+          <a href="#">Cookie Policy</a>
+        </div>
       </div>
     </div>
     <div class="footer-bottom">
-      © 2026 QuoteAI. All rights reserved. Built for contractors who mean business.
+      <p>© 2026 QuoteAI. All rights reserved. AI estimates are for guidance only — always verify before sending.</p>
+      <p style="color:rgba(255,255,255,0.2);">Built with ❤️ for contractors who hustle</p>
     </div>
   </div>
 </footer>
